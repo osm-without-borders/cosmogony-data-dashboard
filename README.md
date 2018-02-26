@@ -1,10 +1,28 @@
 # cosmogony-data-dashboard
 
-To show stats about the world [Cosmogony](https://github.com/osm-without-borders/cosmogony)
+The purpose of this repo is to provide tools to compute and show stats about the world [Cosmogony](https://github.com/osm-without-borders/cosmogony).
+
+It can help to check the quality (well mostly the quantity actually...) of OpenStreetMap boundaries zones.
+
+Contributions are very welcomed in the repo. If you have new ideas about tests to add, please take a look at the [founding issue](https://github.com/osm-without-borders/cosmogony/issues/4) first ;)
 
 :construction::warning: This is a work in progress, and deeply connected to the Cosmogony output format. Follow on in [this issue](https://github.com/osm-without-borders/cosmogony/issues/4) :warning::construction:
 
 ## Country stats and tests
+
+### Purpose
+
+We want to compute the number of zones for each kind of zone and for each country. Then, we want to compare this output with some references values (the actual number of zones for each kind of zone in the real world)
+
+### Compute and test against references values
+
+You will need `python3` and a few dependancies you can install with `pipenv install`.
+
+To compute the number of zones for each kind of zones (volumetric stats) and test them again reference values, just type:
+
+`py.test`
+
+You can also get some visual results over the tests using the `index.html` file inside the repo.
 
 ### Reference values
 
