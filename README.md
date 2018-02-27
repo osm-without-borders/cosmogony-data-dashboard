@@ -2,7 +2,7 @@
 
 The purpose of this repo is to provide tools to compute and show stats about the world [Cosmogony](https://github.com/osm-without-borders/cosmogony).
 
-It can help to check the quality (well mostly the quantity actually...) of OpenStreetMap boundaries zones.
+It can help to check the quality (well, mostly the quantity actually...) of OpenStreetMap boundaries zones.
 
 Contributions are very welcomed in the repo. If you have new ideas about tests to add, please take a look at the [founding issue](https://github.com/osm-without-borders/cosmogony/issues/4) first ;)
 
