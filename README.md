@@ -20,7 +20,9 @@ You will need `python3` and a few dependancies you can install with `pipenv inst
 
 To compute the number of zones for each kind of zones (volumetric stats) and test them again reference values, just type:
 
-`py.test`
+`pipenv run py.test --cosmogony my-cosmogony.json`
+
+Detailed test results are written to `data_volumetric.json`.
 
 You can also get some visual results over the tests using the `index.html` file inside the repo.
 

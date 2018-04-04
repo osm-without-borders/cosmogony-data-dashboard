@@ -1,12 +1,21 @@
 # coding: utf-8
+import pandas as pd
 
-import csv
-import test_volumetries
+from utils import ZonesIndex
 
+
+def pytest_addoption(parser):
+    parser.addoption("--cosmogony", action="store", required=True,
+        help="a cosmogony json file")
 
 def pytest_generate_tests(metafunc):
-    with open('data_volumetric.csv') as csvfile:
-        csvreader = csv.DictReader(csvfile)
-        rows = list(csvreader)
-        if 'line' in metafunc.fixturenames:
-            metafunc.parametrize('line', rows)
+    cosmogony_path = metafunc.config.getoption('cosmogony')
+    zones_index = ZonesIndex.init_from_cosmogony(cosmogony_path)
+
+    expected_values = pd.read_csv('reference_stats_values.csv')
+    rows = (row for idx,row in expected_values.iterrows())
+
+    if 'line' in metafunc.fixturenames:
+        metafunc.parametrize('line', rows)
+    if 'zones_index' in metafunc.fixturenames:
+        metafunc.parametrize('zones_index', [zones_index])

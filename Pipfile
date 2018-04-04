@@ -11,6 +11,8 @@ matplotlib = "*"
 pandas = "*"
 geopandas = "*"
 pytest = "*"
-
+ijson = "*"
+ipython = "*"
+cffi = "*"
 
 [dev-packages]
