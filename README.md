@@ -16,7 +16,7 @@ We want to compute the number of zones for each kind of zone and for each countr
 
 ### Compute and test against references values
 
-You will need `python3` and a few dependancies you can install with `pipenv install`.
+You will need `python3` and a few dependancies you can install with `pipenv install --three`.
 
 To compute the number of zones for each kind of zones (volumetric stats) and test them again reference values, just type:
 
