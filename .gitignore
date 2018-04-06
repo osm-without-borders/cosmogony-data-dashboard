@@ -1,0 +1,5 @@
+__pycache__
+.pytest_cache
+data_volumetric.csv
+data_volumetric.json
+cosmogony.geojson
