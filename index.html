@@ -22,13 +22,15 @@
     <body>
         <article>
             <h2>Cosmogony metrics</h2>
-            <p>You can check below the number of zones by country for each type of zone, and compare this number with the actual number of zones in the real world.
+            <p>You can check below the number of zones by country for each type of zone, and compare this number with
+                <a href="https://github.com/osm-without-borders/cosmogony-data-dashboard#reference-values">the actual number of zones in the real world</a>.
+
                 <details>
                     <ul>
                         <li>✅✅ : ok
-                        <li>❎❎ : ko, too few or too many zones
-                        <li>❎ known failures : we know that somes zones are still missing in OpenStreetMap
-                        <li>✅😍 : we did think that some zones were missing in OpenStreetMap, but it's actually ok
+                        <li>❌❌ : ko, too few or too many zones
+                        <li>❌ known failure : we know that somes zones are still missing in OpenStreetMap
+                        <li>✅✌ : we did think that some zones were missing in OpenStreetMap, but it's actually ok
                         <li>skipped : the country was not found in the Cosmogony file
                     </ul>
                 </details>
@@ -63,13 +65,13 @@
                     if (data[i]['test_status'] == 'ok') {
                         status = '✅'
                         status += (data[i]['is_known_failure'] == "yes")
-                            ? " 😍 "
+                            ? " ✌ "
                             : "✅";
                     }
                     if (data[i]['test_status'] == 'ko') {
                         status += (data[i]['is_known_failure'] == "yes")
-                            ? "❎ <br> known failure"
-                            : "❎❎";
+                            ? "❌ <br> known failure"
+                            : "❌❌";
                     }
                     if (data[i]['test_status'] == 'skip') {
                         status = 'skipped'
