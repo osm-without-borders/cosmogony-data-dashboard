@@ -106,7 +106,9 @@ Q30,États-Unis,state,,1,4242,yes,
 Q96,Mexique,state,,1,4242,yes,
 Q242,Belize,state,,1,4242,yes,
 Q244,Barbade,state,,1,4242,yes,
-Q750,Bolivie,state,,1,4242,yes,
+Q750,Bolivie,state,departamento,9,9,,Q250050
+Q750,Bolivie,state_district,provincia,112,112,,Q1062593
+Q750,Bolivie,city,municipio,339,339,,Q1062710
 Q757,Saint-Vincent-et-les-Grenadines,state,,1,4242,yes,
 Q804,Panama,state,,1,4242,yes,
 Q77,Uruguay,state,,1,4242,yes,
