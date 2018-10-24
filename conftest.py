@@ -1,12 +1,17 @@
 # coding: utf-8
 import pandas as pd
 
-from utils import ZonesIndex
+from utils import ZonesIndex, CONFIG
 
 
 def pytest_addoption(parser):
     parser.addoption("--cosmogony", action="store", required=True,
         help="a cosmogony json file")
+    parser.addoption("--output", action="store", default='data_volumetric.json',
+        help="path to result file")
+
+def pytest_configure(config):
+    CONFIG['output'] = config.getoption('--output')
 
 def pytest_generate_tests(metafunc):
     cosmogony_path = metafunc.config.getoption('cosmogony')

@@ -2,6 +2,9 @@ from collections import defaultdict
 
 import ijson.backends.yajl2_cffi as ijson
 
+CONFIG = {
+    'output': None,
+}
 
 class UnknownWikidataId(Exception):
     pass

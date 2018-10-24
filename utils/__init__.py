@@ -1,1 +1,1 @@
-from .index import ZonesIndex, UnknownWikidataId
+from .index import ZonesIndex, UnknownWikidataId, CONFIG
