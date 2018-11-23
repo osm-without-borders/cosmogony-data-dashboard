@@ -42,3 +42,4 @@ Expected min and max values are the number of administrative zones that are expe
 If this number is known but OSM data are not yet up to date, you can flag the tests as a known failure.
 
 Cosmogony, just like OpenStreetMap, emphasizes local knowledge: feel free to add some numbers for the countries you know about ;)
+[Learn more here](https://github.com/osm-without-borders/cosmogony#contribute)

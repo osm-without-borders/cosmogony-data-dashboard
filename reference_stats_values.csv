@@ -3,21 +3,21 @@ Q142,France,state,région,17,19,,Q36784
 Q142,France,state_district,département,99,103,,Q6465
 Q142,France,city,commune,34800,36000,,Q484170
 Q38,Italie,state,regioni,19,21,yes,Q16110
-Q38,Italie,state_district,province,107,113,yes,Q15089
+Q38,Italie,state_district,province,106,111,,Q15089
 Q38,Italie,city,comuni,7900,8100,,Q747074
 Q183,Allemagne,state,länder,15,17,,Q1221156
 Q183,Allemagne,city,gemeinde,11100,12300,,Q262166
 Q32,Luxembourg,state,(does not exist),0,1,,
 Q32,Luxembourg,state_district,canton,11,13,,
 Q32,Luxembourg,city,commune,100,104,,
-Q31,Belgique,state,région,2,4,yes,Q83057
-Q31,Belgique,state_district,province,8,12,yes,Q83116
-Q31,Belgique,city,municipality,500,700,yes,Q493522
+Q31,Belgique,state,région,2,4,,Q83057
+Q31,Belgique,state_district,province,8,12,,Q83116
+Q31,Belgique,city,commune,550,650,,Q493522
 Q39,Suisse,state,canton,24,28,,Q23058
 Q39,Suisse,city,commune,2000,3000,,Q70208
-Q45,Portugal,state,district,16,20,yes,Q41806065
-Q45,Portugal,state_district,municipality,310,330,yes,Q13217644
-Q45,Portugal,city,freguesia,3000,4000,,Q1131296
+Q45,Portugal,state,district,16,20,,Q41806065
+Q45,Portugal,state_district,municipality,306,312,,Q13217644
+Q45,Portugal,city,freguesia,3000,3500,,Q1131296
 Q25230,Guernesey,city,parish,8,12,yes,Q3365965
 Q29999,Pays-Bas,state,province,10,14,yes,Q134390
 Q29999,Pays-Bas,city,municipality,300,500,yes,Q2039348
@@ -27,7 +27,7 @@ Q1246,Kosovo,city,komuna,25,36,yes,Q2989682
 Q9676,île de Man,state,sheading,5,7,,Q12883402
 Q20,Norvège,state,fylke,17,21,,Q192299
 Q29,Espagne,state,comunidad autónoma,15,20,,
-Q29,Espagne,state_district,provincia,40,60,yes,
+Q29,Espagne,state_district,provincia,40,60,,
 Q29,Espagne,city,municipio,8000,9000,,
 Q148,République populaire de Chine,state,province,25,40,yes,Q1615742
 Q117,Ghana,state,subdivision,8,12,yes,Q3390476
@@ -126,11 +126,13 @@ Q241,Cuba,state,,1,4242,yes,
 Q774,Guatemala,state,,1,4242,yes,
 Q800,Costa Rica,state,,1,4242,yes,
 Q219060,Palestine,state,,1,4242,yes,
-Q17,Japon,state,,1,4242,yes,
+Q17,Japon,country_region,地方,8,8,,
+Q17,Japon,state,都府県,46,48,,
 Q43,Turquie,state,,75,85,,
 Q159,Russie,state,,80,90,yes,
 Q227,Azerbaïdjan,state,federal subjects,1,4242,yes,
-Q229,Chypre,state,eparchies,5,7,,
+Q229,Chypre,city,πόλη,35,45,,
+Q229,Chypre,state_district,eparchies,5,7,,
 Q232,Kazakhstan,state,,1,4242,yes,
 Q252,Indonésie,state,,1,4242,yes,
 Q265,Ouzbékistan,state,,1,4242,yes,
@@ -174,41 +176,62 @@ Q917,Bhoutan,state,,1,4242,yes,
 Q921,Brunei,state,,1,4242,yes,
 Q928,Philippines,state,,1,4242,yes,
 Q25,pays de Galles,state,,1,4242,yes,
-Q27,Irlande,state,county,20,30,yes,
-Q28,Hongrie,state,megye,15,25,,
-Q33,Finlande,state,maakuntaa,15,25,,
-Q34,Suède,state,län,15,25,,
+Q27,Irlande,state_district,county,25,35,,
+Q27,Irlande,city,townland,61000,61200,yes,
+Q28,Hongrie,state,megye,19,20,,
+Q28,Hongrie,city,település,3155,3155,,
+Q33,Finlande,state,,15,25,,
+Q33,Finlande,city,kunta,250,350,,
+Q34,Suède,state,landsdelar,2,3,,
+Q34,Suède,state_district,län,15,25,,
+Q34,Suède,city,kommuner,280,300,,
 Q35,Danemark,state,regioner,5,10,,
-Q36,Pologne,state,województwa,15,20,,
-Q37,Lituanie,state,apskritys,8,12,,
+Q35,Danemark,city,kommune,95,105,yes,
+Q36,Pologne,state,województwa,15,20,,Q150093
+Q36,Pologne,state_district,powiaty,370,390,,Q247073
+Q36,Pologne,city,,2600,2700,yes,Q15334
+Q37,Lituanie,state,apskritis,8,12,,Q273789
+Q37,Lituanie,state_district,savivaldybės,50,70,yes,Q1363145
+Q37,Lituanie,city,,100,105,yes,
 Q40,Autriche,state,bundesländer,7,12,,
-Q41,Grèce,state,,1,4242,yes,
+Q40,Autriche,state_district,politische Bezirke,75,85,yes,
+Q41,Grèce,state,περιφέρεια,10,20,yes,
+Q41,Grèce,state_district,νομός,50,60,yes,
+Q41,Grèce,city,δήμος,850,950,yes,
 Q43,Turquie,state,,1,4242,yes,
 Q145,Royaume-Uni,state,,1,4242,yes,
 Q184,Biélorussie,state,,1,4242,yes,
 Q189,Islande,state,,1,4242,yes,
-Q191,Estonie,state,,1,4242,yes,
-Q211,Lettonie,state,,1,4242,yes,
+Q191,Estonie,state,maakond,10,20,,
+Q191,Estonie,city,omavalitsus,200,250,yes,
+Q211,Lettonie,state_district,novadi,105,115,yes,Q3345345
+Q211,Lettonie,city,republikas pilsetas,8,10,yes,Q15127838
 Q212,Ukraine,state,,1,4242,yes,
-Q213,République tchèque,state,,1,4242,yes,
-Q214,Slovaquie,state,,1,4242,yes,
-Q215,Slovénie,state,,1,4242,yes,
+Q213,République tchèque,state,region,10,15,,Q38911
+Q213,République tchèque,city,municipality,6200,6300,,Q5153359
+Q214,Slovaquie,state,region,7,10,,Q15057583
+Q214,Slovaquie,state_district,district,70,80,,Q2264478
+Q214,Slovaquie,city,municipality,4000,4200,yes,Q6784672
+Q215,Slovénie,city,municipality,210,215,,Q328584
 Q217,Moldavie,state,,1,4242,yes,
-Q218,Roumanie,state,,1,4242,yes,
-Q219,Bulgarie,state,,1,4242,yes,
+Q218,Roumanie,state_district,county,40,45,yes,Q6453413
+Q218,Roumanie,city,commune,2600,2700,yes,Q659103
+Q219,Bulgarie,state,oblast,25,35,yes,
+Q219,Bulgarie,city,obchtini,260,270,yes,
 Q221,République de Macédoine,state,,1,4242,yes,
 Q222,Albanie,state,,1,4242,yes,
-Q224,Croatie,state,,1,4242,yes,
+Q224,Croatie,state,comitat,15,25,,
+Q224,Croatie,city,općina,420,560,yes,
 Q225,Bosnie-Herzégovine,state,,1,4242,yes,
 Q227,Azerbaïdjan,state,,1,4242,yes,
 Q228,Andorre,state,,1,4242,yes,
 Q230,Géorgie,state,,1,4242,yes,
 Q232,Kazakhstan,state,,1,4242,yes,
-Q233,Malte,state,,1,4242,yes,
-Q235,Monaco,city,,1,1,,
-Q235,Monaco,state,,0,0,,
+Q233,Malte,state,region,4,6,yes,Q7309296
+Q233,Malte,state_district,local council,65,70,yes,Q719592
+Q235,Monaco,city,,1,1,yes,
 Q236,Monténégro,state,,1,4242,yes,
-Q237,Vatican,state,,0,0,,
+Q237,Vatican,city,,1,1,yes,
 Q238,Saint-Marin,state,,1,4242,yes,
 Q347,Liechtenstein,state,,1,4242,yes,
 Q403,Serbie,state,,1,4242,yes,
