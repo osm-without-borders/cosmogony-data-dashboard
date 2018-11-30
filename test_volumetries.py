@@ -4,7 +4,7 @@ import json
 import csv
 import pytest
 
-from utils import UnknownWikidataId
+from utils import UnknownWikidataId, CONFIG
 
 def check_if_test_passes(expected_min, expected_max, total):
     if expected_min <= total <= expected_max:
@@ -19,7 +19,7 @@ class TestCosmogony:
 
     @classmethod
     def teardown_class(cls):
-        cls.results.to_json('data_volumetric.json', orient='records')
+        cls.results.to_json(CONFIG['output'], orient='records')
 
     def test_row(self, line, zones_index):
         try:
