@@ -30,8 +30,8 @@
 "Q29","Spain","ES","state_district","provincia",40,60,,
 "Q29","Spain","ES","city","municipio",8000,9000,,
 "Q148","People's Republic of China","CN","state","province",25,40,"yes","Q1615742"
-"Q117","Ghana","GH","state","subdivision",8,12,"yes","Q3390476"
-"Q117","Ghana","GH","state_district","district",190,230,"yes","Q545769"
+"Q117","Ghana","GH","state","subdivision",9,11,"yes","Q3390476"
+"Q117","Ghana","GH","state_district","district",200,300,"yes","Q545769"
 "Q40362","Sahrawi Arab Democratic Republic",,"state",,1,4242,"yes",
 "Q79","Egypt","EG","state",,20,30,"yes",
 "Q114","Kenya","KE","state",,1,4242,"yes",
@@ -200,41 +200,53 @@
 "Q41","Greece","GR","city","δήμος",850,950,"yes",
 "Q43","Turkey","TR","state",,1,4242,"yes",
 "Q145","United Kingdom","GB","state",,1,4242,"yes",
-"Q184","Belarus","BY","state",,1,4242,"yes",
-"Q189","Iceland","IS","state",,1,4242,"yes",
+"Q184","Belarus","BY","state","Oblasts",4,7,"yes",Q209325
+"Q184","Belarus","BY","state_district","Regions",110,120,"yes",Q2043199
+"Q184","Belarus","BY","city",,110,120,"yes",Q209993
+"Q189","Iceland","IS","state","regions",7,10,"yes",
 "Q191","Estonia","EE","state","maakond",10,20,,
 "Q191","Estonia","EE","city","omavalitsus",200,250,"yes",
 "Q211","Latvia","LV","state_district","novadi",105,115,"yes","Q3345345"
 "Q211","Latvia","LV","city","republikas pilsetas",8,10,"yes","Q15127838"
-"Q212","Ukraine","UA","state",,1,4242,"yes",
+"Q212","Ukraine","UA","state",,1,4242,"yes",Q4391987
+"Q212","Ukraine","UA","city",,1,4242,"yes",Q200209
 "Q213","Czech Republic","CZ","state","region",10,15,,"Q38911"
 "Q213","Czech Republic","CZ","city","municipality",6200,6300,,"Q5153359"
 "Q214","Slovakia","SK","state","region",7,10,,"Q15057583"
 "Q214","Slovakia","SK","state_district","district",70,80,,"Q2264478"
 "Q214","Slovakia","SK","city","municipality",4000,4200,"yes","Q6784672"
 "Q215","Slovenia","SI","city","municipality",210,215,,"Q328584"
-"Q217","Moldova","MD","state",,1,4242,"yes",
+"Q217","Moldova","MD","state","Regiunea",1,10,"yes",
+"Q217","Moldova","MD","city","raioane",35,45,"yes",
 "Q218","Romania","RO","state_district","county",40,45,"yes","Q6453413"
 "Q218","Romania","RO","city","commune",2600,2700,"yes","Q659103"
 "Q219","Bulgaria","BG","state","oblast",25,35,"yes",
 "Q219","Bulgaria","BG","city","obchtini",260,270,"yes",
 "Q221","North Macedonia","MK","state",,1,4242,"yes",
-"Q222","Albania","AL","state",,1,4242,"yes",
+"Q222","Albania","AL","state","qarku",1,4242,"yes",
+"Q222","Albania","AL","state_district","rreth",1,4242,"yes",
+"Q222","Albania","AL","city","komunë",1,4242,"yes",
 "Q224","Croatia","HR","state","comitat",15,25,,
 "Q224","Croatia","HR","city","općina",420,560,"yes",
-"Q225","Bosnia and Herzegovina","BA","state",,1,4242,"yes",
+"Q225","Bosnia and Herzegovina","BA","state",,3,3,"yes",
+"Q225","Bosnia and Herzegovina","BA","state_district","kanton",10,20,"yes",
+"Q225","Bosnia and Herzegovina","BA","city","općina",130,160,"yes",
 "Q227","Azerbaijan","AZ","state",,1,4242,"yes",
-"Q228","Andorra","AD","state",,1,4242,"yes",
-"Q230","Georgia","GE","state",,1,4242,"yes",
+"Q228","Andorra","AD","state","paroisses",6,8,"yes",
+"Q230","Georgia","GE","state","ავტონომიური რესპუბლიკა",1,3,"yes",
+"Q230","Georgia","GE","state_district","მხარე",7,14,"yes",
+"Q230","Georgia","GE","city","რაიონი",65,70,"yes",
 "Q232","Kazakhstan","KZ","state",,1,4242,"yes",
 "Q233","Malta","MT","state","region",4,6,"yes","Q7309296"
 "Q233","Malta","MT","state_district","local council",65,70,"yes","Q719592"
 "Q235","Monaco","MC","city",,1,1,"yes",
-"Q236","Montenegro","ME","state",,1,4242,"yes",
+"Q235","Monaco","MC","city_district","quartier",8,10,"yes",
+"Q236","Montenegro","ME","state",,20,25,"yes",
 "Q237","Vatican City","VA","city",,1,1,"yes",
-"Q238","San Marino","SM","state",,1,4242,"yes",
-"Q347","Liechtenstein","LI","state",,1,4242,"yes",
-"Q403","Serbia","RS","state",,1,4242,"yes",
+"Q238","San Marino","SM","city","castelli",1,8,"yes",Q14292916
+"Q347","Liechtenstein","LI","city","Gemeinde",7,13,"yes",
+"Q403","Serbia","RS","state_district","окрузи",25,35,"yes",
+"Q403","Serbia","RS","city","општине",140,200,"yes",
 "Q408","Australia","AU","state",,1,4242,"yes",
 "Q664","New Zealand","NZ","state",,1,4242,"yes",
 "Q672","Tuvalu","TV","state",,1,4242,"yes",
