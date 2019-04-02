@@ -42,7 +42,7 @@ class ZonesIndex:
     def build_children(self):
         for z in self.id_to_zone.values():
             parent_id = z.get('parent')
-            if parent_id:
+            if parent_id is not None:
                 self.id_to_children[parent_id].append(z)
 
     def _iter_all_children(self, zone):
