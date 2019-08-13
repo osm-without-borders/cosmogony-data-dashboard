@@ -9,10 +9,9 @@ verify_ssl = true
 
 matplotlib = "*"
 pandas = "*"
-geopandas = "*"
 pytest = "*"
 ijson = "*"
-ipython = "*"
 cffi = "*"
 
 [dev-packages]
+ipython = "*"

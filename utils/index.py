@@ -1,5 +1,7 @@
+import typing
 from collections import defaultdict
-
+import gzip
+import json
 import ijson.backends.yajl2_cffi as ijson
 
 CONFIG = {
@@ -14,15 +16,26 @@ class ZonesIndex:
     Index cosmogony zones both by internal `id` and wikidata id
     """
     @classmethod
-    def init_from_cosmogony(cls, cosmogony_path):
+    def init_from_cosmogony(cls, cosmogony_path: str):
         zones_index = cls()
 
-        print('Reading zones...')
-        with open(cosmogony_path, 'rb') as f:
-            zones = ijson.items(f, 'zones.item')
+        def index_zones(zones: typing.Iterable[dict]):
             for z in zones:
                 z.pop('geometry', None)
                 zones_index.insert(z)
+
+        print('Reading zones...')
+        if cosmogony_path.endswith('.json'):
+            with open(cosmogony_path, 'rb') as f:
+                zones = ijson.items(f, 'zones.item')
+                index_zones(zones)
+        elif cosmogony_path.endswith('.jsonl.gz'):
+            with gzip.open(cosmogony_path) as f:
+                zones = (json.loads(line) for line in f)
+                index_zones(zones)
+        else:
+            raise Exception("Unknown file extension in '{}'", cosmogony_path)
+
         print('{} zones have been read'.format(len(zones_index)))
 
         zones_index.build_children()

@@ -1,7 +1,5 @@
 # coding: utf-8
 import pandas as pd
-import json
-import csv
 import pytest
 
 from utils import UnknownWikidataId, CONFIG

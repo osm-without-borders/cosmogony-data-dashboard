@@ -6,7 +6,7 @@ from utils import ZonesIndex, CONFIG
 
 def pytest_addoption(parser):
     parser.addoption("--cosmogony", action="store", required=True,
-        help="a cosmogony json file")
+        help="a cosmogony file (.json or .jsonl.gz)")
     parser.addoption("--output", action="store", default='data_volumetric.json',
         help="path to result file")
 
